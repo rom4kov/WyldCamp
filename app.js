@@ -113,6 +113,7 @@ app.use(
                 "data:",
                 "https://res.cloudinary.com/dyfatvv85/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
                 "https://images.unsplash.com/",
+                "https://source.unsplash.com/",
             ],
             fontSrc: ["'self'", ...fontSrcUrls],
         },
