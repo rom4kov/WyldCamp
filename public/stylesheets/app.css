@@ -1,15 +1,90 @@
 #cluster-map {
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 500px;
+  border-radius: 1rem;
 }
 
 #map {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
+  border-radius: 1rem;
 }
 
-.card {
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.3%;
+}
+
+.card-rounded {
+  width: 22.5%;
   border-radius: 1rem;
   box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  display: flex;
+}
+
+.card-rounded .card-text {
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.btn {
+  width: 100%;
+  height: 1.75rem;
+  padding-block: 0.2rem;
+  line-height: 1.2;
+  background: #212529bb;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  background: #212529cc;
+  color: #ddd;
+}
+
+#campgroundCarousel {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+}
+
+#show-card {
+  background: #ddd;
+  border-bottom-left-radius: 1rem; 
+  border-bottom-right-radius: 1rem;
+}
+
+.card-body-buttons {
+  display: flex;
+}
+
+.card-body a {
+  width: 5rem;
+  margin-right: 0.5rem;
+  border: none;
+}
+
+.card-body form button {
+  width: 5rem;
+  border: none;
+}
+
+.validated-form button {
+  display: block;
+  width: 7rem;
+  margin-left: auto;
+  border: none;
+}
+
+.home-card a {
+  width: 100%;
+}
+
+textarea.form-control {
+  border-radius: 1rem;
 }

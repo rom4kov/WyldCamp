@@ -25,7 +25,7 @@
             <% } %>
         </div>
 
-        <div class="card mb-4">
+        <div class="card mb-4" id="show-card">
             <div class="card-body">
                 <h5 class="card-title"><%= campground.title %></h5>
                 <p class="card-text"><%= campground.description %></p>
@@ -36,7 +36,7 @@
                 <li class="list-group-item">$<%= campground.price %> per night</li>
             </ul>
             <% if(currentUser && campground.author.equals(currentUser._id)) { %>
-            <div class="card-body">
+            <div class="card-body card-body-buttons">
                 <a class="card-link btn btn-info" style="color: white; font-weight: 600;"
                     href="/campgrounds/<%= campground._id %>/edit">Edit</a>
                 <form class="d-inline" style="font-weight: 600;"

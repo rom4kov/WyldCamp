@@ -21,7 +21,11 @@ module.exports.createCampground = async (req, res, next) => {
     }).send()
     const campground = new Campground(req.body.campground);
     campground.geometry = geoData.body.features[0].geometry;
-    campground.images = req.files.map(f => ({ url: f.path, filename: f.filename }))
+    campground.images = req.files.map(f => ({ url: f.path.replace(
+        "/upload",
+        "/upload/c_fill,w_800,ar_3:2"
+      ),
+    filename: f.filename }))
     campground.author = req.user._id;
     await campground.save();
     console.log(campground.geometry);
@@ -55,21 +59,23 @@ module.exports.renderEditForm = async (req, res) => {
 
 module.exports.updateCampground = async (req, res) => {
     const { id } = req.params;
-    console.log(req.body);
     const geoData = await geocoder.forwardGeocode({
         query: req.body.campground.location,
         limit: 1
     }).send()
     const campground = await Campground.findByIdAndUpdate(id, { ...req.body.campground });
     campground.geometry = geoData.body.features[0].geometry;
-    const imgs = req.files.map(f => ({ url: f.path, filename: f.filename }))
+    const imgs = req.files.map(f => ({ url: f.path.replace(
+        "/upload",
+        "/upload/c_fill,w_800,ar_3:2"
+      ),
+    filename: f.filename }))
     campground.images.push(...imgs);
     if (req.body.deleteImages) {
         for (let filename of req.body.deleteImages) {
             cloudinary.uploader.destroy(filename)
         }
         await campground.updateOne({ $pull: { images: { filename: { $in: req.body.deleteImages } } } });
-        console.log(campground)
     }
     await campground.save();
     req.flash('success', 'Successfully updated campground!');
