@@ -1,89 +1,104 @@
 [
   {
+    "author": { "$oid": "6626d9e56fc8e30db3fccc9f" },
     "title": "Whispering Pines",
     "description": "Nestled deep in the forest, this tranquil campground offers serene lakeside spots and guided nature hikes.",
     "location": "Tahoe National Forest, California",
     "price": 42
   },
   {
+    "author": {"$oid": "6626d9e56fc8e30db3fccc9f"},
     "title": "Sunset Haven",
     "description": "Enjoy breathtaking sunsets over the horizon at this beachside campground with cozy bonfire gatherings.",
     "location": "Key West, Florida",
     "price": 65
   },
   {
+    "author": {"$oid": "6626da516fc8e30db3fccca6"},
     "title": "Misty Meadows",
     "description": "Surrounded by rolling hills and misty valleys, this campground offers scenic hikes and starlit nights.",
     "location": "Great Smoky Mountains National Park, Tennessee",
     "price": 37
   },
   {
+    "author": {"$oid": "6626db8c6fc8e30db3fcccb7"},
     "title": "River's Edge",
     "description": "Camp along the gentle riverbank, fish, and enjoy riverside barbecues under the shady trees.",
     "location": "Yellowstone National Park, Wyoming",
     "price": 58
   },
   {
+    "author": {"$oid": "6626da516fc8e30db3fccca6"},
     "title": "Wilderness Retreat",
     "description": "Escape to the heart of the wilderness, where adventure awaits in untamed landscapes and starry nights.",
     "location": "Yosemite National Park, California",
     "price": 75
   },
   {
+    "author": {"$oid": "6626da896fc8e30db3fcccb0"},
     "title": "Golden Glades",
     "description": "Discover the beauty of golden-hued glades, perfect for birdwatching and peaceful strolls.",
     "location": "Great Basin National Park, Nevada",
     "price": 43
   },
   {
+    "author": {"$oid": "6626db8c6fc8e30db3fcccb7"},
     "title": "Lakeside Oasis",
     "description": "Relax by the serene lake, kayak, and explore nearby waterfalls in this picturesque oasis.",
     "location": "Glacier National Park, Montana",
     "price": 61
   },
   {
+    "author": {"$oid": "6626db9d6fc8e30db3fcccbe"},
     "title": "Mountain Majesty",
     "description": "Camp beneath towering peaks, hike scenic trails, and marvel at breathtaking mountain vistas.",
     "location": "Rocky Mountain National Park, Colorado",
     "price": 52
   },
   {
+    "author": {"$oid": "6626da516fc8e30db3fccca6"},
     "title": "Tranquil Timberland",
     "description": "Immerse yourself in the tranquility of dense woodlands, with peaceful streams and abundant wildlife.",
     "location": "Olympic National Park, Washington",
     "price": 29
   },
   {
+    "author": {"$oid": "6626db9d6fc8e30db3fcccbe"},
     "title": "Sunny Slopes",
     "description": "Bask in the sunshine on gentle slopes, perfect for picnics, frisbee, and starlit campfires.",
     "location": "Grand Teton National Park, Wyoming",
     "price": 72
   },
   {
+    "author": {"$oid": "6626db9d6fc8e30db3fcccbe"},
     "title": "Echoing Canyon",
     "description": "Camp in the heart of a canyon, where echoes dance and cliffside views mesmerize.",
     "location": "Grand Canyon National Park, Arizona",
     "price": 46
   },
   {
+    "author": {"$oid": "6626db9d6fc8e30db3fcccbe"},
     "title": "Secluded Serenity",
     "description": "Escape to this secluded retreat, where peace and quiet reign amidst lush forests and meandering streams.",
     "location": "Shenandoah National Park, Virginia",
     "price": 34
   },
   {
+    "author": {"$oid": "6626da896fc8e30db3fcccb0"},
     "title": "Starlight Shores",
     "description": "Camp under the twinkling stars along sandy shores, with gentle waves lulling you to sleep.",
     "location": "Acadia National Park, Maine",
     "price": 57
   },
   {
+    "author": {"$oid": "6626da896fc8e30db3fcccb0"},
     "title": "Enchanted Woods",
     "description": "Wander through enchanted woods, where fairytale charm meets natural beauty, and magic is in the air.",
     "location": "Redwood National and State Parks, California",
     "price": 39
   },
   {
+    "author": {"$oid": "6626da516fc8e30db3fccca6"},
     "title": "Harbor Hideaway",
     "description": "Find refuge in this hidden harbor, with calm waters, coastal breezes, and stunning sunset views.",
     "location": "Channel Islands National Park, California",

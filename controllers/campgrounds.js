@@ -23,7 +23,7 @@ module.exports.createCampground = async (req, res, next) => {
     campground.geometry = geoData.body.features[0].geometry;
     campground.images = req.files.map(f => ({ url: f.path.replace(
         "/upload",
-        "/upload/c_fill,w_800,ar_3:2"
+        "/upload/c_fill,q_auto,w_800,ar_3:2"
       ),
     filename: f.filename }))
     campground.author = req.user._id;

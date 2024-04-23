@@ -88,3 +88,16 @@
 textarea.form-control {
   border-radius: 1rem;
 }
+
+#register-form button {
+  width: 6rem; 
+}
+
+#edit-form div button {
+  width: 12rem;
+}
+
+.review-card {
+  border: 1px solid #aa9;
+  border-radius: 1rem;
+}
