@@ -101,3 +101,13 @@ textarea.form-control {
   border: 1px solid #aa9;
   border-radius: 1rem;
 }
+
+.review-card h5 {
+  margin-bottom: 0;
+}
+
+.starability-result {
+  scale: 0.6;
+  left: -1.9rem;
+  margin-bottom: 0;
+}

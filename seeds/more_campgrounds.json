@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Lone Star Oasis",
+    "description": "Escape to Lone Star Oasis in the heart of Texas, where rugged landscapes and starry nights await beneath the expansive Texas sky.",
+    "location": "Big Bend National Park, Texas",
+    "price": 60,
+    "author": {"$oid": "6626da516fc8e30db3fccca6"}
+  },
+  {
+    "title": "Wisconsin Woods Retreat",
+    "description": "Discover Wisconsin Woods Retreat, nestled amidst lush forests and pristine lakes, offering tranquility and adventure in equal measure.",
+    "location": "Chequamegon-Nicolet National Forest, Wisconsin",
+    "price": 70,
+    "author": {"$oid": "6626da896fc8e30db3fcccb0"}
+  },
+  {
+    "title": "Ozark Highlands Haven",
+    "description": "Explore Ozark Highlands Haven in scenic Arkansas, where rolling hills and winding rivers provide the perfect backdrop for outdoor adventures.",
+    "location": "Ozark National Forest, Arkansas",
+    "price": 55,
+    "author": {"$oid": "6626db9d6fc8e30db3fcccbe"}
+  },
+  {
+    "title": "Black Hills Sanctuary",
+    "description": "Find sanctuary in the Black Hills of South Dakota, where towering pines and majestic peaks create an idyllic setting for relaxation and exploration.",
+    "location": "Black Hills National Forest, South Dakota",
+    "price": 65,
+    "author": {"$oid": "6626da516fc8e30db3fccca6"}
+  },
+  {
+    "title": "Platte River Pines",
+    "description": "Unwind at Platte River Pines in Nebraska, where tranquil riverbanks and sprawling prairies offer a serene escape amidst the Midwest landscape.",
+    "location": "Platte River State Park, Nebraska",
+    "price": 50,
+    "author": {"$oid": "6626da896fc8e30db3fcccb0"}
+  }
+]

@@ -81,6 +81,7 @@
         </form>
         <% } %>
         <% for (let review of campground.reviews) { %>
+        <% console.log(campground.reviews[0].rating) %>
         <div class="mb-3 card review-card">
             <div class="card-body">
                 <h5 class="card-title"><%= review.author.username %></h5>
