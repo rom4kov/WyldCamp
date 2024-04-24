@@ -1,11 +1,24 @@
 <% layout('layouts/boilerplate') %>
+<script>
+  const filterByName = (event) => {
+    const searchTerm = event.target.value.trim().toLowerCase();
+    const cards = document.querySelectorAll(".index-card-body h5");
+    cards.forEach((title) => {
+      card = title.parentNode.parentNode.parentNode;
+      card.style.display = "block";
+      if (!title.innerText.toLowerCase().includes(searchTerm)) {
+        card.style.display = "none";
+      }
+    })
+  }
+</script>
 <div id="cluster-map"></div>
 <h1 class="mt-5">All Campgrounds</h1>
 <div id="index-topbar">
   <p class="mb-5">You can currently choose from <b>
     <%= campgrounds.length %>
   </b> campgrounds</p>
-  <input type="search" placeholder="Search for campgrounds..." oninput="filterByName()">
+  <input type="search" placeholder="Search for campgrounds..." oninput="filterByName(event)">
 </div>
 
 <div id="card-container">
@@ -23,7 +36,7 @@
       <span><%= campground.avgRating %></span>
     </div>
     <div>
-      <div class="card-body home-card">
+      <div class="card-body index-card-body">
         <h5 class="card-title"><%= campground.title %></h5>
         <p class="card-text"><%= campground.description %> </p>
         <p class="card-text" id="index-location">
@@ -46,8 +59,3 @@
   };
 </script>
 <script src="/javascripts/clusterMap.js"></script>
-<script>
-  const filterByName = () => {
-    console.log("Filtering");
-  }
-</script>

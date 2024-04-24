@@ -81,7 +81,7 @@
   border: none;
 }
 
-.home-card a {
+.index-card-body a {
   width: 100%;
 }
 
@@ -127,6 +127,15 @@ textarea.form-control {
   background-image: url("../images/star.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+#index-card {
+  transition: transform 200ms ease-out;
+}
+
+#index-card:hover {
+  transform: scale(1.02);
+  transition: transform 200ms ease-out;
 }
 
 #index-card span {
