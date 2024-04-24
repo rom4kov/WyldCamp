@@ -6,7 +6,26 @@ const { cloudinary } = require('../cloudinary');
 
 
 module.exports.index = async (req, res) => {
-    const campgrounds = await Campground.find({});
+    const deepCopy = (obj) => {
+      return JSON.parse(JSON.stringify(obj));
+    };
+    let camp_grounds = await Campground.find({});
+    let campgrounds = [];
+    for (const cg of camp_grounds) {
+      const campground = await Campground.findById(cg._id).populate({
+          path: 'reviews',
+          populate: {
+              path: 'author'
+          }
+      }).populate('author');
+      let ratings = 0;
+      for (const review of campground.reviews) {
+        ratings += review.rating;
+      };
+      let newCampground = deepCopy(campground);
+      newCampground.avgRating = (ratings / campground.reviews.length).toFixed(1);
+      campgrounds.push(newCampground);
+    };
     res.render('campgrounds/index', { campgrounds })
 }
 
@@ -40,11 +59,16 @@ module.exports.showCampground = async (req, res) => {
             path: 'author'
         }
     }).populate('author');
+    let ratings = 0;
+    for (const review of campground.reviews) {
+      ratings += review.rating;
+    };
+    const avgRating = (ratings / campground.reviews.length).toFixed(1);
     if (!campground) {
         req.flash('error', 'Cannot find that campground!');
         return res.redirect('/')
     }
-    res.render(`campgrounds/show`, { campground })
+    res.render(`campgrounds/show`, { campground, avgRating })
 }
 
 module.exports.renderEditForm = async (req, res) => {

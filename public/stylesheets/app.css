@@ -25,7 +25,7 @@
 }
 
 .card-rounded .card-text {
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
@@ -110,4 +110,50 @@ textarea.form-control {
   scale: 0.6;
   left: -1.9rem;
   margin-bottom: 0;
+}
+
+.card-body h5 span {
+  float: right;
+  font-size: 1rem;
+}
+
+.card-body h5 span::before {
+  position: absolute;
+  top: 17px;
+  right: 41px;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-image: url("../images/star.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#index-card span {
+  position: absolute;
+  top: 165px;
+  right: 10px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#index-card span::before {
+  position: absolute;
+  top: 3px;
+  right: 26px;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  color: white;
+  background-image: url("../images/star_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#darker-bg {
+  background: linear-gradient(330deg, rgba(0, 0, 0, 0.7) 0 -16%, rgba(255, 255, 255, 0.0) 24% 100%);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  aspect-ratio: 3 / 2;
 }

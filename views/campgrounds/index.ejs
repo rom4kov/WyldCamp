@@ -7,8 +7,7 @@
 
 <div id="card-container">
   <% for (let campground of campgrounds) { %>
-  <div class="card card-rounded mb-5">
-
+  <div class="card card-rounded mb-5" id="index-card">
     <div>
       <% if (campground.images.length) { %>
         <img class="img-fluid" src="<%= campground.images[0].url %>" alt="">
@@ -17,6 +16,8 @@
         src="https://res.cloudinary.com/dyfatvv85/image/upload/v1652012641/YelpCamp/yurvxs42vd4racw6qyji.jpg"
         alt="">
       <% } %>
+      <div id="darker-bg"></div>
+      <span><%= campground.avgRating %></span>
     </div>
     <div>
       <div class="card-body home-card">
@@ -24,6 +25,9 @@
         <p class="card-text"><%= campground.description %> </p>
         <p class="card-text">
           <small class="text-muted"><%= campground.location %></small>
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Submitted by <%= campground.author.username %></small>
         </p>
         <a class="btn" href="/campgrounds/<%= campground._id %> ">View <%= campground.title %> </a>
       </div>

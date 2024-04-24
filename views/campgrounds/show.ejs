@@ -27,7 +27,7 @@
 
         <div class="card mb-4" id="show-card">
             <div class="card-body">
-                <h5 class="card-title"><%= campground.title %></h5>
+                <h5 class="card-title"><%= campground.title %><span> <%= avgRating %></span></h5>
                 <p class="card-text"><%= campground.description %></p>
             </div>
             <ul class="list-group list-group-flush">
@@ -81,7 +81,6 @@
         </form>
         <% } %>
         <% for (let review of campground.reviews) { %>
-        <% console.log(campground.reviews[0].rating) %>
         <div class="mb-3 card review-card">
             <div class="card-body">
                 <h5 class="card-title"><%= review.author.username %></h5>
