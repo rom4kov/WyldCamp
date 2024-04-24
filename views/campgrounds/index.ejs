@@ -1,9 +1,12 @@
 <% layout('layouts/boilerplate') %>
 <div id="cluster-map"></div>
 <h1 class="mt-5">All Campgrounds</h1>
-<p class="mb-5">You can currently choose from <b>
-  <%= campgrounds.length %>
-</b> campgrounds</p>
+<div id="index-topbar">
+  <p class="mb-5">You can currently choose from <b>
+    <%= campgrounds.length %>
+  </b> campgrounds</p>
+  <input type="search" placeholder="Search for campgrounds..." oninput="filterByName()">
+</div>
 
 <div id="card-container">
   <% for (let campground of campgrounds) { %>
@@ -23,11 +26,8 @@
       <div class="card-body home-card">
         <h5 class="card-title"><%= campground.title %></h5>
         <p class="card-text"><%= campground.description %> </p>
-        <p class="card-text">
+        <p class="card-text" id="index-location">
           <small class="text-muted"><%= campground.location %></small>
-        </p>
-        <p class="card-text">
-          <small class="text-muted">Submitted by <%= campground.author.username %></small>
         </p>
         <a class="btn" href="/campgrounds/<%= campground._id %> ">View <%= campground.title %> </a>
       </div>
@@ -46,3 +46,8 @@
   };
 </script>
 <script src="/javascripts/clusterMap.js"></script>
+<script>
+  const filterByName = () => {
+    console.log("Filtering");
+  }
+</script>

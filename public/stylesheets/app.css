@@ -157,3 +157,35 @@ textarea.form-control {
   top: 0;
   aspect-ratio: 3 / 2;
 }
+
+#index-location {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+#index-topbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#index-topbar input {
+  width: 15rem;
+  height: 1.6rem;
+  margin-bottom: 3rem;
+  padding-left: 0.4rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #aaa;
+  color: #777;
+}
+
+#index-topbar input::placeholder {
+  padding-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+#index-topbar input:focus {
+  outline: 1px solid #888;
+}
