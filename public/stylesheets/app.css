@@ -144,6 +144,10 @@ textarea.form-control {
   right: 10px;
   font-weight: 700;
   color: #fff;
+
+  @media screen and (max-width: 1400px) {
+    top: 140px;
+  }
 }
 
 #index-card span::before {
@@ -197,4 +201,38 @@ textarea.form-control {
 
 #index-topbar input:focus {
   outline: 1px solid #888;
+}
+
+@media screen and (max-width: 1200px) {
+  .index-card-body .card-title {
+    font-size: 0.95rem;
+  }
+
+  .index-card-body .card-text {
+    font-size: 0.85rem;
+  }
+
+  .index-card-body a {
+    padding-inline: 0.1rem;
+    font-size: 0.7rem;
+    height: fit-content;
+  }
+
+  #index-card span {
+    top: 117px;
+    right: 5px;
+    font-size: 0.9rem;
+  }
+
+  #index-card span:before {
+    top: 4px;
+    right: 22px;
+    height: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #index-card {
+    width: 31.1%;
+  }
 }
