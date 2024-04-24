@@ -6,26 +6,7 @@ const { cloudinary } = require('../cloudinary');
 
 
 module.exports.index = async (req, res) => {
-    const deepCopy = (obj) => {
-      return JSON.parse(JSON.stringify(obj));
-    };
-    let camp_grounds = await Campground.find({});
-    let campgrounds = [];
-    for (const cg of camp_grounds) {
-      const campground = await Campground.findById(cg._id).populate({
-          path: 'reviews',
-          populate: {
-              path: 'author'
-          }
-      }).populate('author');
-      let ratings = 0;
-      for (const review of campground.reviews) {
-        ratings += review.rating;
-      };
-      let newCampground = deepCopy(campground);
-      newCampground.avgRating = (ratings / campground.reviews.length).toFixed(1);
-      campgrounds.push(newCampground);
-    };
+    const campgrounds = await Campground.find({});
     res.render('campgrounds/index', { campgrounds })
 }
 
