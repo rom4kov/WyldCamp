@@ -248,10 +248,70 @@ textarea.form-control {
   main.container {
     margin-top: 1rem !important;
   }
+
+  #index-topbar {
+    gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
   #index-card span {
     bottom: 0vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .index-card-body .card-title {
+    font-size: 0.9rem;
+  }
+
+  .index-card-body .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #index-topbar {
+    display: block;
+  }
+
+  #index-topbar p {
+    margin-bottom: 1rem !important;
+  }
+
+  #index-topbar input {
+    margin-bottom: 2rem;
+  }
+
+  .index-card-body .card-title {
+    font-size: 0.8rem;
+  }
+
+  .index-card-body .card-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .index-card-body .card-title {
+    font-size: 0.75rem;
+  }
+
+  .index-card-body .card-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #index-card {
+    width: 100%;
+  }
+
+  .index-card-body .card-title {
+    font-size: 0.95rem;
+  }
+
+  .index-card-body .card-text {
+    font-size: 0.9rem;
   }
 }
