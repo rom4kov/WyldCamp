@@ -26,7 +26,7 @@
 <div id="card-container">
   <% for (let campground of campgrounds) { %>
   <div class="card card-rounded mb-5" id="index-card">
-    <div>
+    <div class="img-container">
       <% if (campground.images.length) { %>
         <img class="img-fluid" src="<%= campground.images[0].url %>" alt="">
       <% } else { %>
