@@ -97,6 +97,10 @@ textarea.form-control {
   width: 12rem;
 }
 
+#new-campground-form div button {
+  width: 10rem;
+}
+
 .review-card {
   border: 1px solid #aa9;
   border-radius: 1rem;
