@@ -6,7 +6,9 @@ The development of WyldCamp employs a robust tech stack including Node.js, Expre
 
 #### Functionalities
 
-Everyone can view the campgrounds and reviews without signing up or logging in.
+Everyone can view campgrounds and reviews without signing up or logging in.
+
+Campgrounds can be searched on the main page.
 
 Users will have to login to edit the campground details or any comments.
 
