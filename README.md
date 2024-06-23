@@ -1,8 +1,8 @@
 ### WyldCamp
 
-WyldCamp is an encompassing website project inspired by sites like yelp and airbnb. Registered users can create and review campgrounds. The project is based on Colt Steele's web development bootcamp course available on Udemy.
+WyldCamp is an encompassing website project inspired by sites like Yelp and Airbnb. Registered users can create and review campgrounds. The project is based on Colt Steele's web development bootcamp course available on Udemy.
 
-The development of WyldCamp employs a robust tech stack including Node.js, Express, MongoDB, and Bootstrap, with authentication managed through Passport.js.
+The development of WyldCamp employs a robust tech stack including Node.js, Express, MongoDB, Bootstrap and EJS with authentication managed through Passport.js.
 
 #### Functionalities
 
