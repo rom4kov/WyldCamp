@@ -15,4 +15,4 @@ Users can only edit/delete the campgrounds and comments that they have added.
 #### Technologies that have been used:
 
 HTML5 - CSS3 - Bootstrap - Javascript - DOM Manipulation - Node.js - Express.js - EJS - REST API -
-MongoDB - Mongoose Middleware - PassportJS - Heroku
+MongoDB - Mongoose - PassportJS - Heroku
