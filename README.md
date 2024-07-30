@@ -1,3 +1,5 @@
+![screenshot_2024-07-30-154721](https://github.com/user-attachments/assets/247bb710-5beb-44f4-8ba9-aa9d320d7d4e)
+
 ### WyldCamp
 
 WyldCamp is an encompassing website project inspired by sites like Yelp and Airbnb. Registered users can create and review campgrounds. The project is based on Colt Steele's web development bootcamp course available on Udemy.
