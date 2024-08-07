@@ -8,12 +8,15 @@ The development of WyldCamp employs a robust tech stack including Node.js, Expre
 
 #### Functionalities
 
-Everyone can view campgrounds and reviews without signing up or logging in.
-Locations of campgrounds can be seen on a map at the top of the campgrounds page.
+Locations of campgrounds can be seen on a map at the top of the main page. Clicking on a dot on the map opens a popup with a link to the particular campground. Campgrounds can also be searched on the main page.
+
 ![screenshot_2024-08-07-130545](https://github.com/user-attachments/assets/3d919c73-708f-41bd-96bf-48228098924a)
 
 
-Campgrounds can be searched on the main page.
+Everyone can view campgrounds and reviews without signing up or logging in.
+
+![screenshot_2024-08-07-132831](https://github.com/user-attachments/assets/80de2a84-281b-4241-bf2a-613577c8af6b)
+
 
 Users will have to login to edit the campground details or any comments.
 
